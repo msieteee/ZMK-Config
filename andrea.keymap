@@ -42,7 +42,7 @@
 			bindings = <
     &kp ESC          &kp F1           &kp F2           &kp F3          &kp F4          &kp F5            &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &kp F11          &kp F12          &kp DEL          &kp DEL          &kp C_MUTE
     &bt BT_CLR       &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5      &trans           &trans           &trans           &kp PSCRN        &trans           &trans           &trans           &reset                            &kp C_VOL_UP
-    &trans           &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_HUI   &trans           &trans           &trans           &trans           &trans           &trans                            &kp K_SLEEP                       &kp C_VOL_DN
+    &trans           &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_HUI   &trans           &trans           &trans           &trans           &trans           &trans                            &ext_power EP_TOG                 &kp C_VOL_DN
     &trans           &rgb_ug RGB_EFF  &trans           &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_HUD   &trans           &kp DEL          &kp END          &kp PG_DN        &trans           &trans           &trans                            &kp PG_UP
     &kp LCTRL                         &kp LALT                         &trans          &trans            &trans           &kp C_MENU                                                                                            &kp HOME         &kp PG_DN      &kp END        
 			>;
