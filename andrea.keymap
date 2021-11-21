@@ -44,7 +44,7 @@
     &trans           &rgb_ug RGB_TOG  &trans           &rgb_ug RGB_HUI &rgb_ug RGB_HUD &trans        &kp PSCRN        &kp SLCK         &kp PAUSE_BREAK  &trans           &trans           &trans           &trans           &trans                          &kp C_PREV
     &trans           &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SAI &rgb_ug RGB_SAD &trans        &kp INS          &kp HOME         &kp PG_UP        &trans           &trans           &trans                            &trans                          &kp C_NEXT
     &kp LSHFT        &trans           &trans           &rgb_ug RGB_BRI &rgb_ug RGB_BRD &trans        &trans           &kp DEL          &kp END          &kp PG_DN        &trans           &trans           &trans                            &kp PG_UP
-    &trans                            &kp LGUI                         &trans          &trans        &trans           &kp C_MENU                                                                                            &kp HOME         &kp PG_DN      &kp END        
+    &trans                            &kp LGUI                         &kp     A       &trans        &trans           &kp C_MENU                                                                                            &kp HOME         &kp PG_DN      &kp END        
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
