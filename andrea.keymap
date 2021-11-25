@@ -9,7 +9,6 @@
 #define FN     1
 #define MAC_OS 2
 #define FN_MAC 3
-#define PW     4
 
 / {
 	keymap {
@@ -42,11 +41,11 @@
 //   | TRANS |         | GUI      |         TRANS | TRANS    |         TRANS | MENU  |                                          HOME   | PG_DN | END   |
 
 			bindings = <
-    &kp ESC          &kp F1           &kp F2           &kp F3          &kp F4          &kp F5            &kp F6       &kp F7           &kp F8           &kp F9           &kp F10           &kp F11          &kp F12          &kp DEL          &kp DEL          &kp C_MUTE
-    &bt BT_CLR       &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5      &trans       &trans           &trans           &kp PSCRN        &trans            &trans           &trans           &reset                            &kp C_VOL_UP
-    &trans           &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_HUI   &trans       &trans           &trans           &tog PW          &ext_power EP_ON  &ext_power EP_OFF                 &bootloader                       &kp C_VOL_DN
-    &trans           &rgb_ug RGB_EFF  &trans           &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_HUD   &trans       &trans           &trans           &trans           &trans            &tog MAC_OS       &trans                            &kp PG_UP
-    &kp LCTRL                         &kp LALT                         &trans          &kp LWIN          &trans       &kp C_AL_FILES                                                                                            &kp HOME      &kp PG_DN      &kp END        
+    &kp ESC          &kp F1           &kp F2           &kp F3          &kp F4                &kp F5            &kp F6             &kp F7           &kp F8           &kp F9           &kp F10           &kp F11          &kp F12          &kp DEL          &kp DEL          &kp C_MUTE
+    &bt BT_CLR       &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3    &bt BT_SEL 4          &bt BT_SEL 5      &trans             &trans           &trans           &kp PSCRN        &trans            &trans           &trans           &reset                            &kp C_VOL_UP
+    &trans           &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_SAI &rgb_ug RGB_BRI       &rgb_ug RGB_HUI   &trans             &trans           &trans           &trans           &ext_power EP_ON  &ext_power EP_OFF                 &bootloader                       &kp C_VOL_DN
+    &trans           &rgb_ug RGB_EFF  &trans           &rgb_ug RGB_SAD &rgb_ug RGB_BRD       &rgb_ug RGB_HUD   &trans             &trans           &trans           &trans           &trans            &tog MAC_OS       &trans                            &kp PG_UP
+    &kp LCTRL                         &kp LALT                         &lt FN SPACE          &kp LWIN          &lt FN SPACE       &kp C_AL_FILES                                                                                            &kp HOME      &kp PG_DN      &kp END        
 			>;
 
 		};
@@ -78,31 +77,14 @@
 //   | TRANS |         | GUI      |         TRANS | TRANS    |         TRANS | MENU  |                                          HOME   | PG_DN | END   |
 
 			bindings = <
-    &kp ESC          &kp F1           &kp F2           &kp F3          &kp F4          &kp F5            &kp F6       &kp F7           &kp F8           &kp F9           &kp F10           &kp F11          &kp F12          &kp DEL          &kp DEL          &kp C_MUTE
-    &bt BT_CLR       &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5      &trans       &trans           &trans           &kp PSCRN        &trans            &trans           &trans           &reset                            &kp C_VOL_UP
-    &kp A            &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_HUI   &trans       &trans           &trans           &tog PW          &ext_power EP_ON  &ext_power EP_OFF                 &bootloader                       &kp C_VOL_DN
-    &trans           &rgb_ug RGB_EFF  &trans           &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_HUD   &trans       &trans           &trans           &trans           &trans            &tog MAC_OS       &trans                           &kp PG_UP
-    &kp LCTRL                         &kp LCMD                         &trans          &kp LALT          &trans       &kp C_AL_FILES                                                                                            &kp HOME      &kp PG_DN      &kp END        
+    &kp ESC          &kp F1           &kp F2           &kp F3          &kp F4                &kp F5            &kp F6                 &kp F7           &kp F8           &kp F9           &kp F10           &kp F11          &kp F12          &kp DEL          &kp DEL          &kp C_MUTE
+    &bt BT_CLR       &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3    &bt BT_SEL 4          &bt BT_SEL 5      &trans                 &trans           &trans           &kp PSCRN        &trans            &trans           &trans           &reset                            &kp C_VOL_UP
+    &kp A            &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_SAI &rgb_ug RGB_BRI       &rgb_ug RGB_HUI   &trans                 &trans           &trans           &trans           &ext_power EP_ON  &ext_power EP_OFF                 &bootloader                       &kp C_VOL_DN
+    &trans           &rgb_ug RGB_EFF  &trans           &rgb_ug RGB_SAD &rgb_ug RGB_BRD       &rgb_ug RGB_HUD   &trans                 &trans           &trans           &trans           &trans            &tog MAC_OS       &trans                           &kp PG_UP
+    &kp LCTRL                         &kp LCMD                         &lt FN_MAC SPACE      &kp LALT          &lt FN_MAC SPACE       &kp C_AL_FILES                                                                                            &kp HOME      &kp PG_DN      &kp END        
 			>;
 
 		};
 
-		pw_layer {
-// -----------------------------------------------------------------------------------------
-//   | GRAVE   | F1    | F2    | F3    | F4    | F5    | F6    | F7    | F8    | F9    | F10   | F11   | F12   | RESET  | TRANS | MUTE  |
-//   | TRANS   |RGB_TOG| TRANS |RGB_HUI|RGB_HUD| TRANS | PSCR  | SCLK  | PAUSE | TRANS | TRANS | TRANS | TRANS | RESET  |         NEXT T|
-//   |MT(SPACE)|RGB_EFF|RGB_EFR|RGB_SAI|RGB_SAD| TRANS | INS   | HOME  | PG_UP | TRANS | TRANS | TRANS |         TRANS  |         PREV T|
-//   | SHIFT   | TRANS | TRANS |RGB_BRI|RGB_BRD| TRANS | TRANS | DEL   | END   | PG_DN | TRANS | TRANS | TRANS |          PG_UP |
-//   | TRANS   |         GUI   |         TRANS | TRANS |         TRANS | MENU  |                                 HOME   | PG_DN | END   |
-
-			bindings = <
-    &kp A            &trans           &trans           &trans          &trans          &trans        &trans           &trans           &trans           &trans           &trans           &trans           &trans             &trans           &trans         &trans
-    &trans           &trans           &trans           &trans          &trans          &trans        &trans           &trans           &trans           &trans           &trans           &trans           &trans             &trans                          &trans
-    &trans           &trans           &trans           &trans          &trans          &trans        &trans           &trans           &trans           &trans           &trans           &trans                              &trans                          &trans
-    &trans           &trans           &trans           &trans          &trans          &trans        &trans           &trans           &trans           &trans           &trans           &ext_power EP_ON &ext_power EP_OFF                   &trans
-    &trans                            &trans                           &lt FN SPACE    &trans        &lt FN SPACE     &trans                                                                                                  &trans           &trans         &trans        
-			>;
-
-		};
 	};
 };  
