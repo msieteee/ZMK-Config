@@ -83,12 +83,12 @@
     &kp A            &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_HUI   &trans       &trans           &trans           &tog PW          &ext_power EP_ON  &ext_power EP_OFF                 &bootloader                       &kp C_VOL_DN
     &trans           &rgb_ug RGB_EFF  &trans           &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_HUD   &trans       &trans           &trans           &trans           &trans            &tog MAC_OS       &trans                           &kp PG_UP
     &kp LCTRL                         &kp LCMD                         &trans          &kp LALT          &trans       &kp C_AL_FILES                                                                                            &kp HOME      &kp PG_DN      &kp END        
-			>
+			>;
 
 		};
 
 		pw_layer {
-// -----------------------------------------------------------------------------------------aaaaaaa
+// -----------------------------------------------------------------------------------------
 //   | GRAVE   | F1    | F2    | F3    | F4    | F5    | F6    | F7    | F8    | F9    | F10   | F11   | F12   | RESET  | TRANS | MUTE  |
 //   | TRANS   |RGB_TOG| TRANS |RGB_HUI|RGB_HUD| TRANS | PSCR  | SCLK  | PAUSE | TRANS | TRANS | TRANS | TRANS | RESET  |         NEXT T|
 //   |MT(SPACE)|RGB_EFF|RGB_EFR|RGB_SAI|RGB_SAD| TRANS | INS   | HOME  | PG_UP | TRANS | TRANS | TRANS |         TRANS  |         PREV T|
